@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+            <Button
+                android:id="@+id/start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:onClick="startRecording"
+                android:text="Start Recording" />
+
+            <Button
+                android:id="@+id/stop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:enabled="false"
+                android:onClick="stopRecording"
+                android:text="Stop Recording" />
+
+<!--                 <com.androidplot.xy.XYPlot
+                    android:id="@+id/dynamicPlot"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_below="@+id/start"
+                    android:layout_centerHorizontal="true" /> -->
+                
+                
+                                <com.aliftechnologies.oscilloscopeapp.MultitouchPlot
+                    android:id="@+id/dynamicPlot"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_below="@+id/start"
+                    android:layout_centerHorizontal="true" />
+                                
+
+</RelativeLayout>
